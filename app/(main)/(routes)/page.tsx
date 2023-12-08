@@ -6,6 +6,10 @@ const state = false; // на самом деле не нужно, просто �
 export default function Home() {
   return (
     <div>
+      <h1 className="text-4xl font-bold text-orange-600 text-center">
+        {" "}
+        Protected route.
+      </h1>
       <p className="text-3xl font-bold text-indigo-500">Младенец-Этап</p>
       <Button
         variant="destructive"
