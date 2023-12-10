@@ -1,11 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { UserButton } from "@clerk/nextjs";
 
 const state = false; // на самом деле не нужно, просто показывает функцию cn
 
 export default function Home() {
   return (
     <div>
+      <UserButton afterSignOutUrl="/" />
       <h1 className="text-4xl font-bold text-orange-600 text-center">
         {" "}
         Protected route.
