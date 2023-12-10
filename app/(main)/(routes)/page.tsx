@@ -1,3 +1,4 @@
+import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { UserButton } from "@clerk/nextjs";
@@ -8,6 +9,7 @@ export default function Home() {
   return (
     <div>
       <UserButton afterSignOutUrl="/" />
+      <ModeToggle />
       <h1 className="text-4xl font-bold text-orange-600 text-center">
         {" "}
         Protected route.
